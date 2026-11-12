@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b2545">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pajak Penjaringan">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20512%20512%27%3E%3Crect%20width%3D%27512%27%20height%3D%27512%27%20rx%3D%2796%27%20fill%3D%27%230b2545%27/%3E%3Crect%20x%3D%2724%27%20y%3D%2724%27%20width%3D%27464%27%20height%3D%27464%27%20rx%3D%2778%27%20fill%3D%27none%27%20stroke%3D%27%23c9a227%27%20stroke-width%3D%2710%27/%3E%3Ctext%20x%3D%27256%27%20y%3D%27318%27%20font-family%3D%27Arial%2Csans-serif%27%20font-size%3D%27200%27%20font-weight%3D%27800%27%20fill%3D%27%23c9a227%27%20text-anchor%3D%27middle%27%3EUP%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+<title>Beranda | Unit Pelayanan Pemungutan Pajak Daerah Kecamatan Penjaringan</title>
+<style>
+:root{--navy:#0b2545;--navy2:#13315c;--blue:#1d4e89;--gold:#c9a227;--bg:#f4f6fa;--text:#1f2937;--muted:#6b7280;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
+a{color:var(--blue);text-decoration:none}
+.container{max-width:1160px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--navy);color:#cfd8e6;font-size:.85rem;padding:7px 0}
+.topbar .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+header{background:var(--white);box-shadow:0 2px 12px rgba(11,37,69,.12);position:sticky;top:0;z-index:50;border-bottom:3px solid var(--gold)}
+header .container{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--navy),var(--blue));color:var(--gold);display:grid;place-items:center;font-weight:800;font-size:1.25rem;letter-spacing:1px}
+.brand small{display:block;color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}
+.brand strong{display:block;color:var(--navy);font-size:1.02rem;line-height:1.25}
+nav ul{list-style:none;display:flex;gap:6px}
+nav a{display:block;padding:10px 18px;border-radius:8px;font-weight:600;color:var(--navy);font-size:.95rem;transition:.2s}
+nav a:hover{background:#e8eef7}
+nav a.active{background:var(--navy);color:var(--white)}
+.burger{display:none;background:none;border:2px solid var(--navy);border-radius:8px;padding:6px 11px;font-size:1.2rem;color:var(--navy);cursor:pointer}
+.hero{background:linear-gradient(120deg,rgba(11,37,69,.96),rgba(29,78,137,.9)),repeating-linear-gradient(45deg,#0b2545 0 12px,#0d2a4e 12px 24px);color:var(--white);padding:90px 0 100px}
+.hero .tag{display:inline-block;background:rgba(201,162,39,.18);border:1px solid var(--gold);color:var(--gold);padding:5px 14px;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.hero h1{font-size:2.5rem;line-height:1.2;margin:18px 0 14px;max-width:760px}
+.hero p{max-width:640px;color:#d6dfec;font-size:1.08rem}
+.btns{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 28px;border-radius:8px;font-weight:700;transition:.2s;border:2px solid var(--gold)}
+.btn.primary{background:var(--gold);color:var(--navy)}
+.btn.primary:hover{background:#dcb73a}
+.btn.ghost{color:var(--white)}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.pagehead{background:linear-gradient(120deg,var(--navy),var(--blue));color:var(--white);padding:50px 0}
+.pagehead h1{font-size:2rem}
+.pagehead p{color:#cfd8e6}
+section{padding:60px 0}
+.title{text-align:center;margin-bottom:38px}
+.title h2{color:var(--navy);font-size:1.8rem}
+.title .bar{width:70px;height:4px;background:var(--gold);margin:12px auto 0;border-radius:4px}
+.title p{color:var(--muted);margin-top:10px}
+.grid{display:grid;gap:22px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card{background:var(--white);border-radius:14px;padding:28px;box-shadow:0 4px 18px rgba(11,37,69,.07);border-top:4px solid var(--blue);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 28px rgba(11,37,69,.14)}
+.card .ic{font-size:2rem;margin-bottom:10px}
+.card h3{color:var(--navy);margin-bottom:8px}
+.card p,.card li{color:#4b5563;font-size:.96rem}
+.card ul{padding-left:18px;margin-top:8px}
+.stats{background:var(--navy);color:var(--white);padding:46px 0}
+.stats .grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));text-align:center}
+.stats b{display:block;font-size:2.1rem;color:var(--gold)}
+.stats span{color:#cfd8e6;font-size:.92rem}
+.notice{background:#fff8e1;border-left:5px solid var(--gold);padding:18px 22px;border-radius:8px;margin-top:26px}
+table{width:100%;border-collapse:collapse;background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 4px 18px rgba(11,37,69,.07)}
+th{background:var(--navy);color:var(--white);text-align:left;padding:14px 18px}
+td{padding:14px 18px;border-bottom:1px solid #e5e9f0}
+tr:last-child td{border-bottom:none}
+.steps{counter-reset:s;list-style:none}
+.steps li{counter-increment:s;position:relative;background:var(--white);padding:18px 20px 18px 74px;border-radius:12px;margin-bottom:14px;box-shadow:0 3px 12px rgba(11,37,69,.06)}
+.steps li::before{content:counter(s);position:absolute;left:18px;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-weight:800}
+details{background:var(--white);border-radius:10px;padding:16px 20px;margin-bottom:12px;box-shadow:0 3px 12px rgba(11,37,69,.06)}
+summary{cursor:pointer;font-weight:700;color:var(--navy)}
+details p{margin-top:10px;color:#4b5563}
+form label{display:block;font-weight:600;margin:14px 0 6px;color:var(--navy)}
+input,textarea,select{width:100%;padding:12px 14px;border:1.5px solid #cdd5e1;border-radius:8px;font:inherit}
+input:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,78,137,.15)}
+form button{margin-top:18px;cursor:pointer;border:none;background:var(--navy);color:var(--white);padding:13px 30px;border-radius:8px;font-weight:700;font-size:1rem}
+form button:hover{background:var(--blue)}
+.ok{background:#e7f6ec;border-left:5px solid #2e9e57;padding:14px 18px;border-radius:8px;margin-bottom:18px;color:#1d6b3a}
+.map iframe{width:100%;height:340px;border:0;border-radius:14px;box-shadow:0 4px 18px rgba(11,37,69,.1)}
+.ct{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #eef1f6}
+.ct:last-child{border-bottom:none}
+.ct small{display:block;color:var(--muted);font-size:.92rem}
+.ct a:not(.wa){font-weight:600}
+.wa{margin-left:auto;background:#25d366;color:#fff!important;padding:9px 16px;border-radius:8px;font-weight:700;white-space:nowrap;font-size:.9rem}
+.wa:hover{background:#1ebe5b}
+.req ol{padding-left:22px;margin-top:10px}
+.req ol ol{margin-top:4px;margin-bottom:4px}
+.req li{margin-bottom:5px;color:#374151;font-size:.96rem}
+.opsi{display:inline-block;background:#fff3cd;color:#7a5b00;border:1px solid #e6c860;border-radius:999px;font-size:.72rem;font-weight:700;padding:0 9px;margin-left:6px;vertical-align:middle}
+footer{background:var(--navy);color:#b9c6d9;padding:46px 0 0;margin-top:20px}
+footer .grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+footer h4{color:var(--white);margin-bottom:12px}
+footer a{color:#b9c6d9}
+footer a:hover{color:var(--gold)}
+footer li{list-style:none;margin-bottom:6px}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding:16px 0;text-align:center;font-size:.85rem}
+body{-webkit-text-size-adjust:100%;overflow-wrap:break-word}
+img,iframe{max-width:100%}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px}
+.tw table{min-width:600px}
+input,textarea,select{font-size:16px}
+nav a,.btn,form button,summary{min-height:44px}
+nav a{display:flex;align-items:center}
+@media(max-width:600px){
+ .topbar .container{flex-direction:column;text-align:center;font-size:.78rem}
+ .hero{padding:56px 0 64px}
+ .hero h1{font-size:1.6rem}
+ .hero p{font-size:1rem}
+ .btns .btn{width:100%;text-align:center}
+ section{padding:40px 0}
+ .pagehead{padding:34px 0}
+ .pagehead h1{font-size:1.6rem}
+ .title h2{font-size:1.45rem}
+ .brand strong{font-size:.88rem}
+ .logo{width:44px;height:44px;font-size:1.05rem}
+ .grid.g2{grid-template-columns:1fr}
+ .card{padding:22px}
+ .steps li{padding:16px 14px 16px 64px}
+ .map iframe{height:260px}
+ form button{width:100%}
+}
+@media(max-width:860px){
+ .burger{display:block}
+ nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--white);box-shadow:0 8px 16px rgba(0,0,0,.1)}
+ nav.open{display:block}
+ nav ul{flex-direction:column;padding:10px 20px}
+ .hero h1{font-size:1.9rem}
+ header .container{position:relative}
+}
+.page{display:none}.page.active{display:block}</style></head><body>
+<div class="topbar"><div class="container">
+<span>📍 Jl. Pluit Raya No.5, Penjaringan, Jakarta Utara</span><span>🕗 Senin - Jumat, 08.00 - 16.00 WIB</span></div></div>
+<header><div class="container">
+<a class="brand" href="#beranda"><div class="logo">UP</div>
+<div><small>Badan Pendapatan Daerah</small><strong>Unit Pelayanan Pemungutan Pajak Daerah<br>Kecamatan Penjaringan</strong></div></a>
+<button class="burger" onclick="document.getElementById('nv').classList.toggle('open')" aria-label="Menu">☰</button>
+<nav id="nv"><ul><li><a href="#beranda" class="active">Beranda</a></li><li><a href="#tentang" class="">Tentang Kami</a></li><li><a href="#informasi" class="">Informasi</a></li><li><a href="#pelayanan" class="">Pelayanan</a></li><li><a href="#kontak" class="">Kontak</a></li></ul></nav></div></header>
+<div class="page" id="pg-beranda">
+
+
+<div class="hero"><div class="container">
+<span class="tag">Pelayanan Pajak Daerah</span>
+<h1>Pelayanan Pajak yang Cepat, Transparan, dan Profesional</h1>
+<p>Selamat datang di portal Unit Pelayanan Pemungutan Pajak Daerah Kecamatan Penjaringan. Kami melayani wajib pajak dengan sepenuh hati demi pembangunan Jakarta.</p>
+<div class="btns"><a class="btn primary" href="#pelayanan">Lihat Pelayanan</a><a class="btn ghost" href="#kontak">Hubungi Kami</a></div>
+</div></div>
+<div class="stats"><div class="container"><div class="grid">
+<div><b>4+</b><span>Jenis Layanan Pajak</span></div>
+<div><b>5 Hari</b><span>Layanan Setiap Minggu Kerja</span></div>
+<div><b>100%</b><span>Komitmen Pelayanan Prima</span></div>
+<div><b>1 Atap</b><span>Pelayanan Terpadu</span></div></div></div></div>
+<section><div class="container">
+<div class="title"><h2>Layanan Unggulan</h2><div class="bar"></div><p>Berbagai layanan perpajakan daerah untuk masyarakat Penjaringan</p></div>
+<div class="grid g3"><div class="card"><div class="ic">🏠</div><h3>PBB-P2</h3><p>Pajak Bumi dan Bangunan Perdesaan dan Perkotaan: informasi, pembayaran, dan pelayanan SPPT.</p></div><div class="card"><div class="ic">📑</div><h3>BPHTB</h3><p>Bea Perolehan Hak atas Tanah dan/atau Bangunan untuk jual beli, hibah, waris, dan lainnya.</p></div><div class="card"><div class="ic">📢</div><h3>Pajak Reklame</h3><p>Konsultasi dan pelayanan pajak atas penyelenggaraan reklame di wilayah kecamatan.</p></div><div class="card"><div class="ic">🧾</div><h3>Konsultasi Pajak</h3><p>Layanan informasi, pengaduan, dan konsultasi perpajakan daerah bagi wajib pajak.</p></div></div>
+<div class="notice"><b>Pengumuman:</b> Pastikan membawa dokumen asli dan fotokopi saat datang ke kantor kami agar proses pelayanan lebih cepat.</div>
+</div></section>
+</div>
+<div class="page" id="pg-tentang">
+
+<div class="pagehead"><div class="container"><h1>Tentang Kami</h1><p>Mengenal Unit Pelayanan Pemungutan Pajak Daerah Kecamatan Penjaringan</p></div></div>
+<section><div class="container"><div class="grid g2">
+<div class="card"><h3>Profil Singkat</h3>
+<p>Unit Pelayanan Pemungutan Pajak Daerah Kecamatan Penjaringan merupakan unit kerja di bawah Badan Pendapatan Daerah yang bertugas memberikan pelayanan, pemungutan, dan pembinaan pajak daerah bagi wajib pajak di wilayah Kecamatan Penjaringan.</p>
+<p style="margin-top:10px">Berkantor di Jl. Pluit Raya No.5, Penjaringan, Jakarta Utara.</p></div>
+<div class="card"><h3>Visi</h3>
+<p>Terwujudnya pelayanan pajak daerah yang prima, transparan, dan akuntabel untuk mendukung pembangunan kota.</p>
+<h3 style="margin-top:16px">Misi</h3>
+<ul><li>Memberikan pelayanan pajak yang cepat, mudah, dan ramah.</li>
+<li>Meningkatkan kesadaran dan kepatuhan wajib pajak.</li>
+<li>Mengoptimalkan penerimaan pajak daerah.</li>
+<li>Meningkatkan profesionalisme dan integritas pegawai.</li></ul></div>
+</div>
+<div class="title" style="margin-top:50px"><h2>Nilai-Nilai Kami</h2><div class="bar"></div></div>
+<div class="grid g3">
+<div class="card"><div class="ic">🤝</div><h3>Integritas</h3><p>Bekerja jujur, adil, dan bebas dari praktik yang merugikan masyarakat.</p></div>
+<div class="card"><div class="ic">⚡</div><h3>Profesional</h3><p>Melayani sesuai standar pelayanan dan ketentuan peraturan yang berlaku.</p></div>
+<div class="card"><div class="ic">🔍</div><h3>Transparan</h3><p>Informasi layanan, persyaratan, dan prosedur terbuka untuk semua.</p></div>
+</div></div></section>
+</div>
+<div class="page" id="pg-informasi">
+
+<div class="pagehead"><div class="container"><h1>Informasi</h1><p>Informasi umum perpajakan daerah dan tanya jawab</p></div></div>
+<section><div class="container">
+<div class="title"><h2>Informasi Pajak Daerah</h2><div class="bar"></div></div>
+<div class="grid g3">
+<div class="card"><div class="ic">📅</div><h3>Jatuh Tempo</h3><p>Perhatikan tanggal jatuh tempo pada SPPT atau surat ketetapan pajak agar terhindar dari sanksi administratif.</p></div>
+<div class="card"><div class="ic">💳</div><h3>Cara Pembayaran</h3><p>Pembayaran dapat dilakukan melalui kanal resmi pemerintah daerah seperti bank, e-commerce, dan kanal digital yang ditunjuk.</p></div>
+<div class="card"><div class="ic">⚠️</div><h3>Waspada Penipuan</h3><p>Petugas kami tidak pernah meminta pembayaran ke rekening pribadi. Gunakan hanya kanal resmi.</p></div>
+</div>
+<div class="title" style="margin-top:50px"><h2>Pertanyaan yang Sering Diajukan</h2><div class="bar"></div></div>
+<details><summary>Apa saja yang harus dibawa saat mengurus pajak?</summary><p>Bawa KTP asli pemilik/kuasa, SPPT atau dokumen pajak terkait, serta dokumen pendukung sesuai jenis layanan. Detail persyaratan tersedia di halaman Pelayanan.</p></details>
+<details><summary>Apakah pelayanan dikenai biaya?</summary><p>Pelayanan administrasi tidak dipungut biaya. Yang dibayarkan hanyalah pajak sesuai ketetapan, melalui kanal resmi.</p></details>
+<details><summary>Bagaimana jika SPPT tidak diterima atau hilang?</summary><p>Silakan datang ke kantor kami dengan membawa KTP dan identitas objek pajak (NOP) untuk permohonan pencetakan ulang.</p></details>
+<details><summary>Bagaimana cara menyampaikan keberatan atau pengaduan?</summary><p>Anda dapat datang langsung ke kantor atau menghubungi kami melalui halaman Kontak.</p></details>
+</div></section>
+</div>
+<div class="page" id="pg-pelayanan">
+
+<div class="pagehead"><div class="container"><h1>Pelayanan</h1><p>Jenis layanan, persyaratan, dan alur pelayanan</p></div></div>
+<section><div class="container">
+<div class="title"><h2>Jenis Pelayanan</h2><div class="bar"></div></div>
+<div class="tw"><table><tr><th>Layanan</th><th>Keterangan</th><th>Persyaratan Umum</th></tr>
+<tr><td><b>PBB-P2</b></td><td>Pendaftaran objek baru, pembetulan, pembatalan, pemecahan SPPT, balik nama/mutasi, dan Surat Keterangan NJOP</td><td>Lihat rincian pada bagian Persyaratan Administrasi PBB-P2 di bawah</td></tr>
+<tr><td><b>BPHTB</b></td><td>Pelayanan pajak atas perolehan hak tanah dan/atau bangunan</td><td>KTP, akta/dokumen peralihan, SPPT PBB</td></tr>
+<tr><td><b>Pajak Reklame</b></td><td>Pelayanan dan konsultasi pajak reklame</td><td>KTP/identitas usaha, izin reklame</td></tr>
+<tr><td><b>Konsultasi &amp; Pengaduan</b></td><td>Informasi perpajakan, saran, dan pengaduan</td><td>Identitas diri</td></tr>
+</table></div>
+<p style="color:#6b7280;margin-top:10px;font-size:.9rem">*Persyaratan dapat berubah sesuai ketentuan terbaru. Silakan konfirmasi ke petugas kami.</p>
+<div class="title" style="margin-top:50px"><h2>Formulir Pelayanan Pajak Daerah</h2><div class="bar"></div><p>Isi formulir secara online sebelum datang ke kantor, lalu cetak hasilnya</p></div><div class="grid g3"><div class="card"><div class="ic">📝</div><h3>Formulir PBB-P2</h3><p>Pendaftaran objek baru, pembetulan, pembatalan, pemecahan SPPT, balik nama/mutasi, dan SK NJOP.</p><p style="margin-top:14px"><a class="btn primary" href="https://pajak-daerah.github.io/Form_Jkt/" target="_blank" rel="noopener">Isi Formulir</a></p></div><div class="card"><div class="ic">📝</div><h3>Formulir BPHTB</h3><p>Formulir pelayanan Bea Perolehan Hak atas Tanah dan/atau Bangunan.</p><p style="margin-top:14px"><a class="btn primary" href="https://pajak-daerah.github.io/Form_Jkt/" target="_blank" rel="noopener">Isi Formulir</a></p></div><div class="card"><div class="ic">📝</div><h3>Formulir Pajak Reklame</h3><p>Formulir pelayanan pajak atas penyelenggaraan reklame.</p><p style="margin-top:14px"><a class="btn primary" href="https://pajak-daerah.github.io/Form_Jkt/" target="_blank" rel="noopener">Isi Formulir</a></p></div></div><div class="notice"><b>Alur pengisian:</b> Input Data &rarr; Isi Form &rarr; Preview &rarr; Simpan PDF &rarr; Cetak Hasil. Bawa hasil cetak bersama dokumen persyaratan saat mengajukan pelayanan.</div><div class="title" style="margin-top:50px"><h2>Persyaratan Administrasi Pelayanan PBB-P2</h2><div class="bar"></div><p>Berdasarkan Keputusan Kepala Badan Pendapatan Daerah Provinsi DKI Jakarta Nomor 458 Tahun 2024 (ditetapkan 28 Juni 2024)</p></div><details class="req" open><summary>A. Pendaftaran Objek Baru</summary><ol><li>surat permohonan</li><li>identitas berupa:<ol type="a"><li>Wajib Pajak Orang Pribadi:<ol type="1"><li>KTP; atau</li><li>Kartu Izin Tinggal Tetap (KITAP) untuk WNA</li></ol></li><li>Wajib Pajak Badan:<ol type="1"><li>Perizinan Berusaha (NIB)</li><li>NPWP Badan</li><li>KTP pengurus Badan</li><li>akta pendirian/perubahan</li></ol></li></ol></li><li>surat kuasa bermaterai &amp; KTP penerima kuasa (jika dikuasakan)</li><li>SPOP/LSPOP diisi dengan benar, jelas, lengkap, dan ditandatangani</li><li>bukti kepemilikan tanah:<ol type="a"><li>untuk tanah yang sudah bersertipikat, berupa fotokopi sertipikat tanah</li><li>untuk tanah yang belum bersertipikat atau sudah bersertipikat tapi masa berlaku sudah habis:<ol type="1"><li>fotokopi surat kavling/girik/dokumen sejenis lainnya atau sertipikat tanah yang sudah habis masa berlakunya</li><li>Surat Pernyataan Penguasaan Fisik (Lampiran II)</li><li>Surat Keterangan Lurah (PM.1)</li></ol></li></ol></li><li>fotokopi bukti peralihan/pengoperan hak</li><li>fotokopi Izin Mendirikan Bangunan/Persetujuan Bangunan Gedung <span class="opsi">opsional</span></li><li>foto objek pajak</li><li>gambar situasi</li></ol></details><details class="req"><summary>B. Pembetulan</summary><ol><li>surat permohonan</li><li>identitas berupa:<ol type="a"><li>Wajib Pajak Orang Pribadi:<ol type="1"><li>KTP; atau</li><li>Kartu Izin Tinggal Tetap (KITAP) untuk WNA</li></ol></li><li>Wajib Pajak Badan:<ol type="1"><li>Perizinan Berusaha (NIB)</li><li>NPWP Badan</li><li>KTP pengurus Badan</li><li>akta pendirian/perubahan</li></ol></li></ol></li><li>surat kuasa bermaterai &amp; KTP penerima kuasa (jika dikuasakan)</li><li>SPOP/LSPOP diisi dengan benar, jelas, lengkap, dan ditandatangani</li><li>hasil cetak SPPT PBB-P2</li><li>bukti kepemilikan tanah: <span class="opsi">opsional</span><ol type="a"><li>untuk tanah yang sudah bersertipikat, berupa fotokopi sertipikat tanah</li><li>untuk tanah yang belum bersertipikat atau sudah bersertipikat tapi masa berlaku sudah habis:<ol type="1"><li>fotokopi surat kavling/girik/dokumen sejenis lainnya atau sertipikat tanah yang sudah habis masa berlakunya</li><li>Surat Pernyataan Penguasaan Fisik (Lampiran II)</li></ol></li></ol></li><li>fotokopi bukti peralihan/pengoperan hak <span class="opsi">opsional</span></li><li>fotokopi Izin Mendirikan Bangunan/Persetujuan Bangunan Gedung <span class="opsi">opsional</span></li><li>foto objek pajak</li><li>wajib lunas PBB-P2, dengan ketentuan:<ol type="a"><li>lunas PBB-P2 untuk 5 tahun pajak terakhir, kecuali untuk tahun pajak yang dimohonkan</li><li>dalam hal pemilikan/penguasaan/pemanfaatan objek pajak kurang dari 5 tahun, maka dikenakan kewajiban pelunasan untuk tahun pajak sejak objek pajak tersebut dimiliki/dikuasai/dimanfaatkan oleh Wajib Pajak</li></ol></li></ol></details><details class="req"><summary>C. Pembatalan</summary><ol><li>surat permohonan</li><li>identitas berupa:<ol type="a"><li>Wajib Pajak Orang Pribadi:<ol type="1"><li>KTP; atau</li><li>Kartu Izin Tinggal Tetap (KITAP) untuk WNA</li></ol></li><li>Wajib Pajak Badan:<ol type="1"><li>Perizinan Berusaha (NIB)</li><li>NPWP Badan</li><li>KTP pengurus Badan</li><li>akta pendirian/perubahan</li></ol></li></ol></li><li>surat kuasa bermaterai &amp; KTP penerima kuasa (jika dikuasakan)</li><li>SPOP diisi dengan benar, jelas, lengkap, dan ditandatangani</li><li>hasil cetak SPPT PBB-P2</li><li>dokumen/bukti yang mendukung permohonan pembatalan</li></ol></details><details class="req"><summary>D. Pemecahan SPPT (Selain Objek Rumah Susun)</summary><ol><li>surat permohonan</li><li>identitas berupa:<ol type="a"><li>Wajib Pajak Orang Pribadi:<ol type="1"><li>KTP; atau</li><li>Kartu Izin Tinggal Tetap (KITAP) untuk WNA</li></ol></li><li>Wajib Pajak Badan:<ol type="1"><li>Perizinan Berusaha (NIB)</li><li>NPWP Badan</li><li>KTP pengurus Badan</li><li>akta pendirian/perubahan</li></ol></li></ol></li><li>surat kuasa bermaterai &amp; KTP penerima kuasa (jika dikuasakan)</li><li>SPOP/LSPOP diisi dengan benar, jelas, lengkap, dan ditandatangani</li><li>hasil cetak SPPT PBB-P2</li><li>bukti kepemilikan tanah:<ol type="a"><li>untuk tanah yang sudah bersertipikat, berupa fotokopi sertipikat tanah</li><li>untuk tanah yang belum bersertipikat atau sudah bersertipikat tapi masa berlaku sudah habis:<ol type="1"><li>fotokopi surat kavling/girik/dokumen sejenis lainnya atau sertipikat tanah yang sudah habis masa berlakunya</li><li>Surat Pernyataan Penguasaan Fisik (Lampiran II)</li><li>Surat Keterangan Lurah (PM.1)</li></ol></li></ol></li><li>fotokopi bukti peralihan/pengoperan hak</li><li>fotokopi Izin Mendirikan Bangunan/Persetujuan Bangunan Gedung <span class="opsi">opsional</span></li><li>foto objek pajak</li><li>gambar situasi</li><li>wajib lunas PBB-P2, dengan ketentuan:<ol type="a"><li>lunas PBB-P2 tanah induk untuk 5 tahun pajak terakhir, kecuali:<ol type="1"><li>untuk tahun pajak yang dimohonkan</li><li>untuk objek pajak yang memenuhi ketentuan sebagaimana ditetapkan dalam Keputusan Kepala Dinas Pelayanan Pajak Nomor 1223 Tahun 2015</li></ol></li><li>dalam hal pemilikan/penguasaan/pemanfaatan objek pajak kurang dari 5 tahun, maka dikenakan kewajiban pelunasan untuk tahun pajak sejak objek pajak tersebut dimiliki/dikuasai/dimanfaatkan oleh Wajib Pajak</li></ol></li><li>Dalam hal tanah/bangunan yang dimohon adalah objek BPHTB, maka pemohon harus melampirkan SSPD BPHTB</li></ol></details><details class="req"><summary>E. Balik Nama/Mutasi</summary><ol><li>surat permohonan</li><li>identitas berupa:<ol type="a"><li>Wajib Pajak Orang Pribadi:<ol type="1"><li>KTP; atau</li><li>Kartu Izin Tinggal Tetap (KITAP) untuk WNA</li></ol></li><li>Wajib Pajak Badan:<ol type="1"><li>Perizinan Berusaha (NIB)</li><li>NPWP Badan</li><li>KTP pengurus Badan</li><li>akta pendirian/perubahan</li></ol></li></ol></li><li>surat kuasa bermaterai &amp; KTP penerima kuasa (jika dikuasakan)</li><li>SPOP/LSPOP diisi dengan benar, jelas, lengkap, dan ditandatangani</li><li>hasil cetak SPPT PBB-P2</li><li>bukti kepemilikan tanah:<ol type="a"><li>untuk tanah yang sudah bersertipikat, berupa fotokopi sertipikat tanah</li><li>untuk tanah yang belum bersertipikat atau sudah bersertipikat tapi masa berlaku sudah habis:<ol type="1"><li>fotokopi surat kavling/girik/dokumen sejenis lainnya atau sertipikat tanah yang sudah habis masa berlakunya</li><li>Surat Pernyataan Penguasaan Fisik (Lampiran II)</li></ol></li></ol></li><li>fotokopi bukti peralihan/pengoperan hak</li><li>fotokopi Izin Mendirikan Bangunan/Persetujuan Bangunan Gedung <span class="opsi">opsional</span></li><li>foto objek pajak</li><li>wajib lunas PBB-P2, dengan ketentuan:<ol type="a"><li>lunas PBB-P2 untuk 5 tahun pajak terakhir, kecuali untuk tahun pajak yang dimohonkan</li><li>dalam hal pemilikan/penguasaan/pemanfaatan objek pajak kurang dari 5 tahun, maka dikenakan kewajiban pelunasan untuk tahun pajak sejak objek pajak tersebut dimiliki/dikuasai/dimanfaatkan oleh Wajib Pajak</li></ol></li><li>Dalam hal tanah/bangunan yang dimohon adalah objek BPHTB, maka pemohon harus melampirkan SSPD BPHTB</li></ol></details><details class="req"><summary>F. Surat Keterangan NJOP PBB-P2</summary><ol><li>surat permohonan</li><li>fotokopi identitas berupa:<ol type="a"><li>Wajib Pajak Orang Pribadi:<ol type="1"><li>KTP; atau</li><li>Kartu Izin Tinggal Tetap (KITAP) untuk WNA</li></ol></li><li>Wajib Pajak Badan:<ol type="1"><li>Perizinan Berusaha (NIB)</li><li>NPWP Badan</li><li>KTP pengurus Badan</li><li>akta pendirian/perubahan</li></ol></li></ol></li><li>surat kuasa bermaterai &amp; KTP penerima kuasa (jika dikuasakan)</li><li>hasil cetak SPPT PBB-P2 tahun sebelumnya, kecuali atas objek yang tidak diterbitkan SPPT PBB-P2</li></ol></details><div class="notice"><b>Catatan:</b><ul style="margin:6px 0 0 18px"><li>Untuk pelayanan secara daring melalui <b>pajakonline.jakarta.go.id</b>, persyaratan dapat berbentuk formulir elektronik, dokumen elektronik, persetujuan elektronik, dan/atau hasil pindai.</li><li>Tanda <span class="opsi">opsional</span> menunjukkan persyaratan yang berstatus opsional pada kolom keterangan SK.</li><li><b>Surat Pernyataan Penguasaan Fisik</b> memakai format Lampiran II SK: memuat data pemohon, luas dan letak tanah/bangunan, batas-batas, tahun dimiliki/dikuasai, bukti yang dimiliki, dua saksi (Ketua RT dan Ketua RW), serta bermaterai Rp10.000.</li></ul></div><div class="title" style="margin-top:50px"><h2>Alur Pelayanan</h2><div class="bar"></div></div>
+<ol class="steps">
+<li><b>Datang ke kantor</b><br>Ambil nomor antrean di loket informasi.</li>
+<li><b>Serahkan berkas</b><br>Sampaikan dokumen persyaratan kepada petugas pelayanan.</li>
+<li><b>Verifikasi data</b><br>Petugas memeriksa kelengkapan dan kesesuaian dokumen.</li>
+<li><b>Proses &amp; pembayaran</b><br>Dokumen diproses; pembayaran melalui kanal resmi.</li>
+<li><b>Penyerahan hasil</b><br>Terima dokumen hasil pelayanan dan bukti pembayaran.</li>
+</ol>
+<div class="notice">Pelayanan ini <b>tidak dipungut biaya</b>. Laporkan segera jika ada pungutan di luar ketentuan.</div>
+</div></section>
+</div>
+<div class="page" id="pg-kontak">
+
+<div class="pagehead"><div class="container"><h1>Kontak</h1><p>Hubungi kami atau kunjungi kantor kami</p></div></div>
+<section><div class="container"><div class="grid g2">
+<div>
+<div class="card"><h3>Informasi Kontak</h3>
+<div class="ct"><div>📍 <b>Unit Pelayanan Pemungutan Pajak Daerah Kecamatan Penjaringan</b><small>Jl. Pluit Raya No.5, Penjaringan, Jakarta Utara</small></div><a class="wa" style="background:var(--blue)" href="https://maps.app.goo.gl/rfxZtwDre5irdri17" target="_blank" rel="noopener">📍 Lokasi Kantor</a></div>
+<div class="ct"><div>📞 <b>Telepon Kantor</b><small><a href="tel:+622138864158">(021) 38864158</a></small></div></div><div class="ct"><div>💬 <b>WhatsApp Satpel Pelayanan &amp; Penetapan</b><small>0858-8766-2443 (Chat Only)</small></div><a class="wa" href="https://wa.me/6285887662443?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20pajak%20di%20UPPPD%20Penjaringan." target="_blank" rel="noopener">Chat WhatsApp</a></div><div class="ct"><div>💬 <b>WhatsApp Satpel Pendataan</b><small>0821-1099-8005 (Chat Only)</small></div><a class="wa" href="https://wa.me/6282110998005?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20pajak%20di%20UPPPD%20Penjaringan." target="_blank" rel="noopener">Chat WhatsApp</a></div><div class="ct"><div>💬 <b>WhatsApp Satpel Penagihan</b><small>0895-3259-55229 (Chat Only)</small></div><a class="wa" href="https://wa.me/62895325955229?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20pajak%20di%20UPPPD%20Penjaringan." target="_blank" rel="noopener">Chat WhatsApp</a></div><div class="ct"><div>✉️ <b>Email</b><small><a href="mailto:upppd.penjaringan@jakarta.go.id">upppd.penjaringan@jakarta.go.id</a></small></div><a class="wa" style="background:var(--navy)" href="mailto:upppd.penjaringan@jakarta.go.id">Kirim Email</a></div>
+<h3 style="margin-top:18px">Jam Pelayanan</h3><ul><li>Senin - Jumat: <b>08.00 - 16.00 WIB</b></li><li>Sabtu - Minggu & Libur Nasional: <b>Tutup</b></li></ul></div>
+</div>
+<div class="card"><h3>Kirim Pesan</h3>
+<form method="post" action="mailto:upppd.penjaringan@jakarta.go.id?subject=Pesan%20dari%20website%20UPPPD%20Penjaringan" enctype="text/plain">
+<label>Nama Lengkap</label><input name="nama" required>
+<label>Email</label><input type="email" name="email" required>
+<label>Pesan</label><textarea name="pesan" rows="5" required></textarea>
+<button type="submit">Kirim Pesan</button></form><p style="color:#6b7280;font-size:.85rem;margin-top:10px">Tombol ini akan membuka aplikasi email di perangkat Anda.</p></div>
+</div>
+<div class="map" style="margin-top:30px"><iframe loading="lazy"
+src="https://www.google.com/maps?q=Jl.+Pluit+Raya+No.5+Penjaringan+Jakarta+Utara&output=embed"></iframe></div>
+</div></section>
+</div>
+<footer><div class="container"><div class="grid">
+<div><h4>Unit Pelayanan Pemungutan Pajak Daerah</h4><p>Kecamatan Penjaringan<br>Badan Pendapatan Daerah</p><p style="margin-top:10px">Jl. Pluit Raya No.5, Penjaringan, Jakarta Utara</p><p style="margin-top:8px">📞 <a href="tel:+622138864158">(021) 38864158</a><br>✉️ <a href="mailto:upppd.penjaringan@jakarta.go.id">upppd.penjaringan@jakarta.go.id</a></p></div>
+<div><h4>Menu</h4><ul><li><a href="#beranda">Beranda</a></li><li><a href="#tentang">Tentang Kami</a></li><li><a href="#informasi">Informasi</a></li><li><a href="#pelayanan">Pelayanan</a></li><li><a href="#kontak">Kontak</a></li></ul></div>
+<div><h4>Jam Pelayanan</h4><ul><li>Senin - Jumat: <b>08.00 - 16.00 WIB</b></li><li>Sabtu - Minggu & Libur Nasional: <b>Tutup</b></li></ul></div>
+</div><div class="copy">© 2026 Unit Pelayanan Pemungutan Pajak Daerah Kecamatan Penjaringan. Seluruh hak dilindungi.</div></div></footer>
+<script>document.querySelectorAll("#nv a").forEach(function(a){a.addEventListener("click",function(){document.getElementById("nv").classList.remove("open")})})</script>
+<script>
+(function(){
+  var ids=["beranda","tentang","informasi","pelayanan","kontak"];
+  function tampil(){
+    var id=(location.hash||"#beranda").slice(1);
+    if(ids.indexOf(id)<0){id="beranda";}
+    ids.forEach(function(x){
+      document.getElementById("pg-"+x).classList.toggle("active",x===id);
+    });
+    document.querySelectorAll("#nv a").forEach(function(a){
+      a.classList.toggle("active",a.getAttribute("href")==="#"+id);
+    });
+    document.getElementById("nv").classList.remove("open");
+    window.scrollTo(0,0);
+  }
+  window.addEventListener("hashchange",tampil);
+  tampil();
+})();
+</script>
+</body></html>
